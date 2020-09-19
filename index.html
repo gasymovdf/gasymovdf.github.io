@@ -1,12 +1,14 @@
 <!doctype html>
 <html>
   <head>
-    <title>This is the title of the webpage!</title>
+    <title>Какое-то название</title>
   </head>
 
 
   <body style="background-color:powderblue;">
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+    <p>Тестовая строчка, чтобы понять что всё идёт по плааану.</p>
+
+    <div id="like_button_container"></div>
 
     <h1>This is a heading</h1>
 	<p>This is a paragraph.</p>
@@ -14,19 +16,12 @@
   <sub>
   	гыгыгы гагага
   </sub>
-  <address>
-	Written by John Doe.<br> 
-	Visit us at:<br>
-	Example.com<br>
-	Box 564, Disneyland<br>
-	USA
-	</address>
 
-
-   <form action="/action_page.php">
-  <label for="files">Select files:</label>
-  <input type="file" id="files" name="files" multiple><br><br>
-  <input type="submit">
+  <!-- Примечание: для деплоя на продакшен замените окончание «development.js» на «production.min.js». -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>  
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <!-- Загрузим наш React-компонент. -->
+  <script src="like_button.js"></script>
   </body>
 </form> 
 </html>
